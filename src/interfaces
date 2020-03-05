@@ -1,0 +1,14 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+#source-directory /etc/network/interfaces.d
+
+allow-hotplug wlan1
+auto wlan1
+iface wlan1 inet static
+address 10.10.10.1
+netmask 255.255.255.0
+network 10.10.10.0
+post-up /usr/sbin/hostapd -B /etc/hostapd/hostapd.conf
+post-up service dnsmasq restart
+
+

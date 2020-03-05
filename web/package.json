@@ -1,0 +1,12 @@
+{
+    "name": "WifiCaptiveAds",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "hbaocr",
+    "contributors": [],
+    "dependencies": {
+        "arp":"0.0.1",
+    "node-cmd":"2.0.0",
+    "async": "^2.1.5",
+    "http-proxy":"1.16.2"}
+}
